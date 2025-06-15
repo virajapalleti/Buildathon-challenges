@@ -1,0 +1,206 @@
+:root {
+  --text-color: #1a1c20;
+  --link-color: black;
+  --background-color: #f6f1f0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scrollbar-width: 50px;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    color: var(--text-color);
+    background-color: var(--backgroung-color);
+    max-width: 1400px;
+    margin: 0 auto;
+
+}
+
+a {
+    color: var(--link-color);
+    text-decoration: none;
+}
+
+/*navbar*/
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px;
+    height: 100px;
+
+}
+
+nav .left a{
+    color: var(--text-color);
+     font-size: 30px;
+     font-weight: 500;
+
+}
+
+nav .right a{
+    color: var(--text-color);
+    font-size: 20px;
+    margin: 0 6px;
+}
+
+nav .right a span{
+    margin-left: 0px;
+}
+
+/*sec01*/
+.gen-intro {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+    margin: 50px 0;
+    margin-bottom: 100px;
+    gap: 40px;
+}
+
+.gen-intro .text {
+    flex: 5;
+}
+.gen-intro .text h2 {
+    font-size: 40px;
+}
+.gen-intro .text .links{
+    margin-top: 28px;
+}
+.gen-intro .text .links a{
+    color: #357599;
+    display: inline-block;
+    padding: 5px 10px;
+    border: 1px solid var(--link-color);
+    border-color: #357599;
+    margin-right: 10px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
+
+.gen-intro .headshot {
+    flex:2;
+    display: flex;
+    justify-content: right;
+}
+.gen-intro .headshot img {
+  width: 350px;
+  border-radius: 50%;
+}
+
+
+/*sec02*/
+.skills-section {
+    align-items: center;
+    padding: 0 50px;
+    margin: 50px 0;
+    margin-bottom: 100px;
+}
+.skills-section .text h2 {
+    font-size: 30px;
+    text-align: center;
+
+}
+.skills-section .text {
+    margin-bottom: 20px;
+    text-align: center;
+}
+.skills-section .cells {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.skills-section .cells .cell{
+    align-items: center;
+    padding: 10px 20px;
+    border: 1px solid;
+    border-color: #357599;
+    border-radius: 5px;
+    margin: 10px;
+}
+.skills-section .cells .cell span {
+    color: #357599;
+}
+
+
+/*sec03*/
+.contact-section {
+    padding: 0 50px;
+    margin-bottom: 100px;
+}
+.contact-section h2 {
+    font-size: 30px;;
+}
+.contact-section .group {
+    display: flex;
+    gap: 50px;
+
+}
+.contact-section .group .text {
+    flex: 3;
+    margin-top: 20px
+}
+.contact-section .group .form {
+    flex: 4;
+    display: flex;
+    flex-direction: column;
+}
+.contact-section .group form input,
+.contact-section .group form textarea {
+  font-family: 'Raleway', sans-serif;
+  border: 1px solid #357599;
+  border-radius: 2%;
+  background-color: transparent;
+  padding: 10px;
+  margin-bottom: 15px;
+  outline: none;
+  resize: none;
+  width: 100%;
+}
+.contact-section .group form button {
+  font-size: 16px;
+  font-family: 'Raleway', sans-serif;
+  color: white;
+  background-color: #357599;
+  padding: 12px 20px;
+  border: none;
+  height: 50px;
+  cursor: pointer;
+}
+.contact-section .group form button:hover {
+  filter: brightness(.8);
+}
+
+
+
+
+
+
+
+
+
+
+
+/*
+for mobile sized adjustion
+@media (max-width: 650px) {
+    nav {
+        padding: 0 10px;
+    }
+    nav .right a{
+        font-size: 20px;
+    }
+    nav .right a: span {
+        display: none;
+    }
+}
+*/
