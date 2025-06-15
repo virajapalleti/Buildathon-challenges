@@ -1,0 +1,13 @@
+# Editor stuff
+.vscode/
+
+# Windows junk
+Thumbs.db
+
+# Log or temp files
+*.log
+*.swp
+*~
+
+# Secret files
+.env
